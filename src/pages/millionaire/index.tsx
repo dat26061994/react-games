@@ -11,6 +11,10 @@ const Millionaire = () => {
         setIsStart(true);
     }
 
+    const onShowBestScrore = () => {}
+
+    const onShowHelp = () => {}
+
     return(
         <MillionaireWrapper>
             <div className="logo">
@@ -18,7 +22,22 @@ const Millionaire = () => {
 
                 <div className="game-container">
 
-                    { isStart ? <Game /> : <StartButton onClick={onStartGame} /> }
+                    { isStart ? <Game /> : 
+                        <div>
+                            <div className="my-3">
+                                <StartButton onClick={onStartGame} text="Start Game" />
+                            </div>
+
+                            <div className="my-3">
+                                <StartButton onClick={onShowBestScrore} text="Best Score" />
+                            </div>
+
+                            <div className="my-3">
+                                <StartButton onClick={onShowHelp} text="Helps" />
+                            </div>
+
+                        </div>
+                    }
                     
                 </div>
 

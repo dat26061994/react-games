@@ -1,16 +1,17 @@
 import { StartButtonWrapper } from './StyledStartButton';
 
-const StartButton = ({ onClick }: any) => {
+const StartButton = ({ onClick, text }: any) => {
 
     return (
         <StartButtonWrapper onClick={onClick}>
-            Start Game
+            { text }
         </StartButtonWrapper>
     );
 }
 
 StartButton.defaultProps = {
-    onClick: () => {}
+    onClick: () => {},
+    text: 'Start Game',
 }
 
 export default StartButton;

@@ -8,6 +8,7 @@ export const StartButtonWrapper = styled.button`
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
+    min-width: 150px;
 
     :after {
         content: "";

@@ -18,7 +18,7 @@ export const MillionaireWrapper = styled.div`
     }
 
     .game-container {
-        width: 600px;
+        width: 800px;
         height: 600px;
         margin: auto;
     }
